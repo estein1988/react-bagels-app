@@ -1,7 +1,12 @@
 import React from 'react'
 
-const Bagel = () => {
-    return <h3>I am a bagel</h3>
+const Bagel = (props) => {
+    return (
+    <li>
+        <h3>Type: {props.type}</h3>
+        <h3>Rating: {props.rating}</h3>
+    </li>
+    )
 }
 
 export default Bagel
