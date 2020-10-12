@@ -5,6 +5,7 @@ const Bagel = (props) => {
     <li>
         <h3>Type: {props.type}</h3>
         <h3>Rating: {props.rating}</h3>
+        <button onClick={ ()=> props.deleteBagel(props.bagel)}>Delete</button>
     </li>
     )
 }
